@@ -1,0 +1,16 @@
+{
+  "name": "messaging-app",
+  "version": "1.0.0",
+  "description": "A simple messaging application with RabbitMQ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "amqplib": "^0.7.1",
+    "body-parser": "^1.19.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
