@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup Notification</title>
+<link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+<div class="popup-overlay">
+  <div class="popup">
+<!--     <div class="popup-close" onclick="closePopup()">×</div> -->
+    <div class="popup-close" onclick="window.parent.closePopup()">×</div>
+    <div class="popup-content">
+      Сообщение отправлено!
+    </div>
+  </div>
+</div>
+
+<script>
+function closePopup() {
+  document.querySelector('.popup-overlay').style.display = 'none';
+}
+</script>
+</body>
+</html>
