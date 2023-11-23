@@ -10,7 +10,7 @@
     align-items: center;
   }
   
-  .popup {
+.popup {
     background-color: #00bfff; /* Синий фон, как на макете */
     padding: 20px;
     border-radius: 5px;
@@ -20,17 +20,31 @@
     max-width: 300px; /* Максимальная ширина */
   }
   
-  .popup-close {
+.popup-close {
     position: absolute;
-    top: 10px;
+    color: black;
+    top: 5px;
     right: 10px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
   }
   
-  .popup-content {
+.popup-content {
     text-align: center;
-    color: #000; /* Черный текст */
+    color: rgb(255, 255, 255); /* Черный текст */
     font-size: 18px;
+    margin-bottom: 30px; /* Добавлен отступ снизу для текста */
   }
   
+.popup-ok {
+    display: block; /* Занимает весь доступный блок */
+    width: 40%; /* Ширина кнопки */
+    margin: 0 auto; /* Выравнивание по центру */
+    padding: 10px 20px;
+    background-color: #00cc99; /* фон кнопки */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px; /* Размер шрифта текста кнопки */
+}

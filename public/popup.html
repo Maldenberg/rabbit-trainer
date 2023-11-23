@@ -9,18 +9,12 @@
 <body>
 <div class="popup-overlay">
   <div class="popup">
-<!--     <div class="popup-close" onclick="closePopup()">×</div> -->
-    <div class="popup-close" onclick="window.parent.closePopup()">×</div>
+<!--     <div class="popup-close" onclick="window.parent.closePopup()">×</div> -->
     <div class="popup-content">
       Сообщение отправлено!
     </div>
+    <button class="popup-ok" onclick="window.parent.closePopup()">ОК</button>
   </div>
 </div>
-
-<script>
-function closePopup() {
-  document.querySelector('.popup-overlay').style.display = 'none';
-}
-</script>
 </body>
 </html>

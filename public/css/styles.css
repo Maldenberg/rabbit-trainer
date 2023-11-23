@@ -45,4 +45,24 @@ body {
     padding: 10px;
     min-height: 50px;
   }
+
+  .message-icon {
+    margin-right: 10px;
+    color: #0099ff; /* Вы можете изменить цвет иконки на желаемый */
+  }
+  .message {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .no-messages {
+    color: #888888;
+    padding-top: 8px;
+    padding-left: 10px; /* или любое другое значение, которое подходит под ваш дизайн */
+  }
+  
   
