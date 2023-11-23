@@ -1,0 +1,10 @@
+FROM rabbitmq:3-management
+
+# Копирование скрипта очистки
+COPY cleanup.sh /cleanup.sh
+
+# Даем права на выполнение скрипта
+RUN chmod +x /cleanup.sh
+
+# Запускаем RabbitMQ и скрипт очистки
+CMD /cleanup.sh && rabbitmq-server

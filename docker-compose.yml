@@ -7,7 +7,9 @@ services:
     depends_on:
       - rabbitmq
   rabbitmq:
-    image: rabbitmq:3-management
+    build:
+      context: .
+      dockerfile: Dockerfile.rabbitmq
     ports:
       - "5672:5672"
       - "15672:15672"
